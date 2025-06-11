@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Float, Integer, Date, ForeignKey, UniqueConstraint, Index, Numeric, Text
 from sqlalchemy.orm import relationship
-from database import Base
+from app.database import Base
 
 class Station(Base):
     __tablename__ = "stations"

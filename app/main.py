@@ -8,12 +8,9 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func, or_
 import logging
 
-# Import database components
-from database import get_db
-from models import Station, MonthlyNormal, CloudCover, HeatIndex
-
-# Import sun calculator module
-from sun_calculator import get_sun_data_for_date_range
+from app.database import get_db
+from app.models import Station, MonthlyNormal, CloudCover, HeatIndex
+from app.sun_calculator import get_sun_data_for_date_range
 
 app = FastAPI(title="Climate Data API")
 
